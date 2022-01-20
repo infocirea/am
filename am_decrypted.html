@@ -1,0 +1,1499 @@
+<html>
+
+<!--*********SEZIONE COPYRIGHT*********-->
+
+<!--Acquamarket Online © CIREA - Dipartimento di Scienze Chimiche, della Vita e della Sostenibilità Ambientale - Università degli Studi di Parma / ARPAE-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="Alessandra Puglisi, Antonella Bachiorri, Guido Giombi, Giuseppe Boselli">
+<meta name="description" content="ACQUAMARKET. UN GIOCO PER SCOPRIRE L’ACQUA NASCOSTA NEL CIBO CHE MANGIAMO. CIREA/ARPAE autorizzano la visione dei materiali contenuti nel Sito web CIREA, ivi compresa il layout grafico, esclusivamente a scopo personale, non a fini di lucro, nel rispetto del diritto d'autore e in generale dei diritti di proprietà intellettuale dei materiali contenuti nel Sito, siano essi originali o copie. È vietata qualsiasi modifica dei materiali presenti sul Sito, la loro riproduzione, utilizzo in pubblico, distribuzione o qualsiasi altro tipo di utilizzo che sia svolto a scopo commerciale. È inoltre vietato qualsiasi utilizzo dei materiali su di un altro sito Web o su di una rete di computer. I materiali presenti sul Sito sono soggetti alla normativa sul diritto d'autore sui diritti di proprietà industriale e il loro utilizzo non autorizzato costituisce violazione delle leggi sul diritto d'autore, sui marchi ed in generale della normativa applicabile a protezione della proprietà intellettuale.">
+<meta name="viewport" content="width=device-width">
+<title>Acquamarket Online © CIREA Universit&agrave di Parma / ARPAE</title>
+
+<!--*********SEZIONE FOGLIO DI STILE CSS*********-->
+
+<style>
+input {
+text-align:right;
+width: 80px;
+font-weight: bold;
+font-size: 90%;
+}
+td {
+font-weight: bold;
+font-size: 130%;
+text-align:center;
+}
+th {
+font-size: 120%;
+}
+.border {
+border: 0.9px solid #555;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 17px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<!--*********SEZIONE CORPO DELLA PAGINA WEB*********-->
+
+<body>
+<center>
+<img width="60%" alt="logo acquamarket" src="am.gif">
+&nbsp;<br>
+<img width="40%" alt="logo acquamarket" src="http://www.cirea.unipr.it/wp-content/uploads/2021/11/loghi.png">
+</center>
+&nbsp;<br>
+
+<table style="border-collapse: collapse; width: 100%;" border="1">
+	<tbody>
+
+<!--*********INTESTAZIONE*********-->
+
+                <tr>
+			<th style="width: 50%;background-color:#7278ad">&nbsp;<br><font color="#feeb6a">PRODOTTI</font><br>&nbsp;</th>
+			<th style="width: 25%;background-color:#7278ad">&nbsp;<br><font color="#feeb6a">NEL CARRELLO</font><br>&nbsp;</th>
+			<th style="width: 25%;background-color:#7278ad">&nbsp;<br><font color="#feeb6a">TOTALI</font><br>&nbsp;</th>
+		</tr>
+
+<!--*********REPARTO FRUTTA E VERDURA*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#839833">&nbsp;<br><i>Reparto frutta e verdura</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#839833"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********ALBICOCCA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="albicocca" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/40.gif"><br>&nbsp;<br>1 da 30g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box79" type="text" oninput="calculate40();somma()" /></td>
+			<td style="width: 25%;"><input id="result40" /></td>
+		</tr>
+
+<!--*********ARACHIDI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="arachidi" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/18.gif"><br>&nbsp;<br>10 10g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box35" type="text" oninput="calculate18();somma()" /></td>
+			<td style="width: 25%;"><input id="result18" /></td>
+		</tr>
+
+<!--*********ARANCIA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="arancia" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/07.gif"><br>&nbsp;<br>1 da 140g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box13" type="text" oninput="calculate7();somma()" /></td>
+			<td style="width: 25%;"><input id="result7" /></td>
+		</tr>
+
+<!--*********BANANA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="banana" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/10.gif"><br>&nbsp;<br>1 da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box19" type="text" oninput="calculate10();somma()" /></td>
+			<td style="width: 25%;"><input id="result10" /></td>
+		</tr>
+
+<!--*********CILIEGIE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="ciliegie" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/41.gif"><br>&nbsp;<br>10 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box81" type="text" oninput="calculate41();somma()" /></td>
+			<td style="width: 25%;"><input id="result41" /></td>
+		</tr>
+
+<!--*********CLEMENTINE MANDARINI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="clementine/mandarini" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/44.gif"><br>&nbsp;<br>1 da 70g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box87" type="text" oninput="calculate44();somma()" /></td>
+			<td style="width: 25%;"><input id="result44" /></td>
+		</tr>
+
+<!--*********FRAGOLE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="fragole" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/60.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box119" type="text" oninput="calculate60();somma()" /></td>
+			<td style="width: 25%;"><input id="result60" /></td>
+		</tr>
+
+<!--*********FRUTTA SECCA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="frutta secca" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/36.gif"><br>&nbsp;<br>4 frutti 20g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box71" type="text" oninput="calculate36();somma()" /></td>
+			<td style="width: 25%;"><input id="result36" /></td>
+		</tr>
+
+<!--*********LIMONI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="limoni" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/46.gif"><br>&nbsp;<br>1 da 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box91" type="text" oninput="calculate46();somma()" /></td>
+			<td style="width: 25%;"><input id="result46" /></td>
+		</tr>
+
+<!--*********MELA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="mela" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/17.gif"><br>&nbsp;<br>1 da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box33" type="text" oninput="calculate17();somma()" /></td>
+			<td style="width: 25%;"><input id="result17" /></td>
+		</tr>
+
+<!--*********PERE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pera" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/39.gif"><br>&nbsp;<br>1 da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box77" type="text" oninput="calculate39();somma()" /></td>
+			<td style="width: 25%;"><input id="result39" /></td>
+		</tr>
+
+<!--*********PESCA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pesca" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/42.gif"><br>&nbsp;<br>1 da 120g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box83" type="text" oninput="calculate42();somma()" /></td>
+			<td style="width: 25%;"><input id="result42" /></td>
+		</tr>
+
+<!--*********SUSINA PRUGNA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="susina/prugna" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/43.gif"><br>&nbsp;<br>1 da 50g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box85" type="text" oninput="calculate43();somma()" /></td>
+			<td style="width: 25%;"><input id="result43" /></td>
+		</tr>
+
+<!--*********UVA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="grappolo d'uva" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/47.gif"><br>&nbsp;<br>1 da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box93" type="text" oninput="calculate47();somma()" /></td>
+			<td style="width: 25%;"><input id="result47" /></td>
+		</tr>
+
+<!--*********BROCCOLI CAVOLFIORI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="broccoli/cavolfiore" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/12.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box23" type="text" oninput="calculate12();somma()" /></td>
+			<td style="width: 25%;"><input id="result12" /></td>
+		</tr>
+
+<!--*********CAROTE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="carote" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/48.gif"><br>&nbsp;<br>1 da 75g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box95" type="text" oninput="calculate48();somma()" /></td>
+			<td style="width: 25%;"><input id="result48" /></td>
+		</tr>
+
+<!--*********FAGIOLINI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="fagiolini" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/58.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box115" type="text" oninput="calculate58();somma()" /></td>
+			<td style="width: 25%;"><input id="result58" /></td>
+		</tr>
+
+<!--*********INSALATA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="insalata" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/27.gif"><br>&nbsp;<br>1 piatto da 50g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box53" type="text" oninput="calculate27();somma()" /></td>
+			<td style="width: 25%;"><input id="result27" /></td>
+		</tr>
+
+<!--*********LEGUMI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="legumi" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/28.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box55" type="text" oninput="calculate28();somma()" /></td>
+			<td style="width: 25%;"><input id="result28" /></td>
+		</tr>
+
+<!--*********MELANZANA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="melanzana" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/45.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box89" type="text" oninput="calculate45();somma()" /></td>
+			<td style="width: 25%;"><input id="result45" /></td>
+		</tr>
+
+<!--*********OLIVE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="olive" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/14.gif"><br>&nbsp;<br>10 30g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box27" type="text" oninput="calculate14();somma()" /></td>
+			<td style="width: 25%;"><input id="result14" /></td>
+		</tr>
+
+<!--*********PATATE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="patate" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/29.gif"><br>&nbsp;<br>1 porzione da 200g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box57" type="text" oninput="calculate29();somma()" /></td>
+			<td style="width: 25%;"><input id="result29" /></td>
+		</tr>
+
+<!--*********PATATE FRITTE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="patatine fritte" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/57.gif"><br>&nbsp;<br>1 porzione da 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box113" type="text" oninput="calculate57();somma()" /></td>
+			<td style="width: 25%;"><input id="result57" /></td>
+		</tr>
+
+<!--*********PATATINE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="sacchetto patatine" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/20.gif"><br>&nbsp;<br>1 sacchetto da 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box39" type="text" oninput="calculate20();somma()" /></td>
+			<td style="width: 25%;"><input id="result20" /></td>
+		</tr>
+
+<!--*********PEPERONE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="peperone" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/62.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box123" type="text" oninput="calculate62();somma()" /></td>
+			<td style="width: 25%;"><input id="result62" /></td>
+		</tr>
+
+<!--*********POMODORO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pomodoro" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/13.gif"><br>&nbsp;<br>1 da 60g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box25" type="text" oninput="calculate13();somma()" /></td>
+			<td style="width: 25%;"><input id="result13" /></td>
+		</tr>
+
+<!--*********SPINACI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="spinaci" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/59.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box117" type="text" oninput="calculate59();somma()" /></td>
+			<td style="width: 25%;"><input id="result59" /></td>
+		</tr>
+
+<!--*********ZUCCA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="zucca" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/16.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box31" type="text" oninput="calculate16();somma()" /></td>
+			<td style="width: 25%;"><input id="result16" /></td>
+		</tr>
+
+<!--*********ZUCCHINE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="zucchine" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/64.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#839833"><input id="box127" type="text" oninput="calculate64();somma()" /></td>
+			<td style="width: 25%;"><input id="result64" /></td>
+		</tr>
+
+<!--*********REPARTO CARNI SALUMI E UOVA*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#E56628">&nbsp;<br><i>Reparto carni, salumi e uova</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#E56628"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********CARNE DI BOVINO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="carne di bovino" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/33.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box65" type="text" oninput="calculate33();somma()" /></td>
+			<td style="width: 25%;"><input id="result33" /></td>
+		</tr>
+
+<!--*********CARNE DI MAIALE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="carne di maiale" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/32.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box63" type="text" oninput="calculate32();somma()" /></td>
+			<td style="width: 25%;"><input id="result32" /></td>
+		</tr>
+
+<!--*********CARNE DI POLLO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="carne di pollo" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/31.gif"><br>&nbsp;<br>1 porzione da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box61" type="text" oninput="calculate31();somma()" /></td>
+			<td style="width: 25%;"><input id="result31" /></td>
+		</tr>
+
+<!--*********HAMBURGER*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="hamburger" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/24.gif"><br>&nbsp;<br>1 da 250g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box47" type="text" oninput="calculate24();somma()" /></td>
+			<td style="width: 25%;"><input id="result24" /></td>
+		</tr>
+
+<!--*********PESCE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pesce da allevamento" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/56.gif"><br>&nbsp;<br>1 porzione da 200g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box111" type="text" oninput="calculate56();somma()" /></td>
+			<td style="width: 25%;"><input id="result56" /></td>
+		</tr>
+
+<!--*********SALUMI*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="salume" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/26.gif"><br>&nbsp;<br>1 porzione da 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box51" type="text" oninput="calculate26();somma()" /></td>
+			<td style="width: 25%;"><input id="result26" /></td>
+		</tr>
+
+<!--*********UOVO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="uovo" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/19.gif"><br>&nbsp;<br>1 da 60g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#E56628"><input id="box37" type="text" oninput="calculate19();somma()" /></td>
+			<td style="width: 25%;"><input id="result19" /></td>
+		</tr>
+
+<!--*********REPARTO LATTICINI*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#D5BFA0">&nbsp;<br><i>Reparto latticini</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#D5BFA0"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********BURRO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="burro" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/11.gif"><br>&nbsp;<br>1 noce da 20g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box21" type="text" oninput="calculate11();somma()" /></td>
+			<td style="width: 25%;"><input id="result11" /></td>
+		</tr>
+
+<!--*********FORMAGGIO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="formaggio" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/21.gif"><br>&nbsp;<br>1 fetta da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box41" type="text" oninput="calculate21();somma()" /></td>
+			<td style="width: 25%;"><input id="result21" /></td>
+		</tr>
+
+<!--*********LATTE*********-->
+
+		<tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="tazza/bicchiere di latte" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/02.gif"><br>&nbsp;<br>1 tazza da 200ml<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box3" type="text" oninput="calculate2();somma()" /></td>
+			<td style="width: 25%;"><input id="result2" /></td>
+		</tr>
+
+<!--*********MOZZARELLA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="mozzarella" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/49.gif"><br>&nbsp;<br>1 da 125g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box97" type="text" oninput="calculate49();somma()" /></td>
+			<td style="width: 25%;"><input id="result49" /></td>
+		</tr>
+
+<!--*********PARMIGIANO REGGIANO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="parmigiano reggiano" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/37.gif"><br>&nbsp;<br>1 scaglia 50g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box73" type="text" oninput="calculate37();somma()" /></td>
+			<td style="width: 25%;"><input id="result37" /></td>
+		</tr>
+
+<!--*********RICOTTA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="ricotta" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/51.gif"><br>&nbsp;<br>1 porzione da 125g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box101" type="text" oninput="calculate51();somma()" /></td>
+			<td style="width: 25%;"><input id="result51" /></td>
+		</tr>
+
+<!--*********YOUGURT*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="yogurt" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/08.gif"><br>&nbsp;<br>1 vasetto da 125g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D5BFA0"><input id="box15" type="text" oninput="calculate8();somma()" /></td>
+			<td style="width: 25%;"><input id="result8" /></td>
+		</tr>
+
+<!--*********REPARTO PASTA RISO E PRODOTTI DA FORNO*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#3190D7">&nbsp;<br><i>Reparto pasta, riso e prodotti da forno</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#3190D7"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********FETTA BISCOTTATA PAN CARRE*********-->
+
+		<tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="fetta biscottata/pan carr&egrave;" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/01.gif"><br>&nbsp;<br>1 fetta da 20g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><input id="box1" type="text" oninput="calculate1();somma()" /></td>
+			<td style="width: 25%;"><input id="result1" /></td>
+		</tr>
+
+<!--*********PANE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pane" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/04.gif"><br>&nbsp;<br>1 fetta da 25g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><input id="box7" type="text" oninput="calculate4();somma()" /></td>
+			<td style="width: 25%;"><input id="result4" /></td>
+		</tr>
+
+<!--*********PASTA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pasta" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/35.gif"><br>&nbsp;<br>1 piatto da 200g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><input id="box69" type="text" oninput="calculate35();somma()" /></td>
+			<td style="width: 25%;"><input id="result35" /></td>
+		</tr>
+
+<!--*********PIZZA*********-->
+
+                <tr>
+
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="pizza" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/15.gif"><br>&nbsp;<br>1 da 350g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><input id="box29" type="text" oninput="calculate15();somma()" /></td>
+			<td style="width: 25%;"><input id="result15" /></td>
+		</tr>
+
+<!--*********RISO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="riso" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/25.gif"><br>&nbsp;<br>1 piatto da 200g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#3190D7"><input id="box49" type="text" oninput="calculate25();somma()" /></td>
+			<td style="width: 25%;"><input id="result25" /></td>
+		</tr>
+
+<!--*********REPARTO DOLCI*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#D8B3FD">&nbsp;<br><i>Reparto dolci</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#D8B3FD"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********BISCOTTO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="biscotto" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/09.gif"><br>&nbsp;<br>1 da 7g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box17" type="text" oninput="calculate9();somma()" /></td>
+			<td style="width: 25%;"><input id="result9" /></td>
+		</tr>
+
+<!--*********CIOCCOLATO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="cioccolato" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/23.gif"><br>&nbsp;<br>4 quadrati da 80g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box45" type="text" oninput="calculate23();somma()" /></td>
+			<td style="width: 25%;"><input id="result23" /></td>
+		</tr>
+
+<!--*********GELATO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="gelato" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/61.gif"><br>&nbsp;<br>1 porzione da 100g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box121" type="text" oninput="calculate61();somma()" /></td>
+			<td style="width: 25%;"><input id="result61" /></td>
+		</tr>
+
+<!--*********MARMELLATA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="marmellata" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/38.gif"><br>&nbsp;<br>1 cucchiaio da 15g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box75" type="text" oninput="calculate38();somma()" /></td>
+			<td style="width: 25%;"><input id="result38" /></td>
+		</tr>
+
+<!--*********MIELE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="miele" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/63.gif"><br>&nbsp;<br>1 cucchiaio da 20g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box125" type="text" oninput="calculate63();somma()" /></td>
+			<td style="width: 25%;"><input id="result63" /></td>
+		</tr>
+
+<!--*********SACCOTTINO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="saccottino" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/50.gif"><br>&nbsp;<br>1 da 42g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box99" type="text" oninput="calculate50();somma()" /></td>
+			<td style="width: 25%;"><input id="result50" /></td>
+		</tr>
+
+<!--*********TORTA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="torta" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/22.gif"><br>&nbsp;<br>1 fetta da 150g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box43" type="text" oninput="calculate22();somma()" /></td>
+			<td style="width: 25%;"><input id="result22" /></td>
+		</tr>
+
+<!--*********ZUCCHERO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="cucchiaino di zucchero" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/06.gif"><br>&nbsp;<br>1 bustina/cucchiaino da 5g<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#D8B3FD"><input id="box11" type="text" oninput="calculate6();somma()" /></td>
+			<td style="width: 25%;"><input id="result6" /></td>
+		</tr>
+
+<!--*********REPARTO BEVANDE*********-->
+
+                <tr>
+			<td style="width: 50%;background-color:#47BAD0">&nbsp;<br><i>Reparto bevande</i><br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><img width="20%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/carrello.png"></td>
+			<td style="width: 25%;background-color:#47BAD0"><img width="15%" alt="carrello" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/ricevuta.png"></td>
+		</tr>
+
+<!--*********ACQUA 05*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="acqua 0.5 litri" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/54.gif"><br>&nbsp;<br>1 bottiglia da 0.5l<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box107" type="text" oninput="calculate54();somma()" /></td>
+			<td style="width: 25%;"><input id="result54" /></td>
+		</tr>
+
+<!--*********ACQUA 15*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="acqua 1.5 litri" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/55.gif"><br>&nbsp;<br>1 bottiglia da 1.5l<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box109" type="text" oninput="calculate55();somma()" /></td>
+			<td style="width: 25%;"><input id="result55" /></td>
+		</tr>
+
+<!--*********BIBITA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="bibita" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/34.gif"><br>&nbsp;<br>1 lattina da 33cl<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box67" type="text" oninput="calculate34();somma()" /></td>
+			<td style="width: 25%;"><input id="result34" /></td>
+		</tr>
+
+<!--*********BIRRA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="birra" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/53.gif"><br>&nbsp;<br>1 lattina da 33cl<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box105" type="text" oninput="calculate53();somma()" /></td>
+			<td style="width: 25%;"><input id="result53" /></td>
+		</tr>
+
+<!--*********CAFFE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="caff&egrave;" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/03.gif"><br>&nbsp;<br>1 tazzina da 25ml<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box5" type="text" oninput="calculate3();somma()" /></td>
+			<td style="width: 25%;"><input id="result3" /></td>
+		</tr>
+
+<!--*********SUCCO FRUTTA*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="succo di frutta" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/52.gif"><br>&nbsp;<br>1 bicchiere o brick 200ml<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box103" type="text" oninput="calculate52();somma()" /></td>
+			<td style="width: 25%;"><input id="result52" /></td>
+		</tr>
+
+<!--*********THE*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="tazza di the" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/05.gif"><br>&nbsp;<br>1 tazza da 200ml<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box9" type="text" oninput="calculate5();somma()" /></td>
+			<td style="width: 25%;"><input id="result5" /></td>
+		</tr>
+
+<!--*********VINO*********-->
+
+                <tr>
+			<td style="width: 50%;">&nbsp;<br><img class="border" width="45%" alt="vino" src="http://www.cirea.unipr.it/wp-content/uploads/2020/11/30.gif"><br>&nbsp;<br>1 bicchiere da 200ml<br>&nbsp;</td>
+			<td style="width: 25%;background-color:#47BAD0"><input id="box59" type="text" oninput="calculate30();somma()" /></td>
+			<td style="width: 25%;"><input id="result30" /></td>
+		</tr>
+
+<!--*********RIGA TOTALE*********-->
+
+		<tr>
+			<th style="width: 50%;background-color:#FFCC33">&nbsp;
+</th>
+			<th style="width: 25%;background-color:#FFCC33"><strong>&nbsp;<br>TOTALE<br>&nbsp;</strong></th>
+			<th style="width: 25%;background-color:#FFCC33"><strong>&nbsp;<br><input type="text" id="ris">&nbsp;<br>&nbsp;</strong></th>
+		</tr>
+
+<tr>
+			<th style="width: 50%;background-color:#FFCC33">&nbsp;
+</th>
+			<th style="width: 25%;background-color:#FFCC33"><a href="http://www.cirea.unipr.it/documentazione/acquamarket_tabella_fonti.pdf"><i>Fonti dei dati (PDF)</i></a></th>
+			<th style="width: 25%;background-color:#FFCC33"><button class="button" onclick="window.print();">Stampa scontrino</button></th>
+		</tr>
+	</tbody>
+</table>
+</body>
+
+<!--*********SEZIONE JAVASCRIPT DI CALCOLO*********-->
+
+<script>
+    function calculate1() {
+        var result1 = 0
+        var myBox1 = document.getElementById('box1').value; 
+        var myBox2 = 32;
+        var result = document.getElementById('result1'); 
+        var myResult1 = myBox1 * myBox2;
+          document.getElementById('result1').value = myResult1;
+
+    }
+</script>
+
+<script>
+    function calculate2() {
+        var result2 = 0
+        var myBox3 = document.getElementById('box3').value; 
+        var myBox4 = 204;
+        var result = document.getElementById('result2'); 
+        var myResult2 = myBox3 * myBox4;
+          document.getElementById('result2').value = myResult2;
+
+    }
+</script>
+
+<script>
+    function calculate3() {
+        var result3 = 0
+        var myBox5 = document.getElementById('box5').value; 
+        var myBox6 = 26;
+        var result = document.getElementById('result3'); 
+        var myResult3 = myBox5 * myBox6;
+          document.getElementById('result3').value = myResult3;
+
+    }
+</script>
+
+<script>
+    function calculate4() {
+        var result4 = 0
+        var myBox7 = document.getElementById('box7').value; 
+        var myBox8 = 40;
+        var result = document.getElementById('result4'); 
+        var myResult4 = myBox7 * myBox8;
+          document.getElementById('result4').value = myResult4;
+
+    }
+</script>
+
+<script>
+    function calculate5() {
+        var result5 = 0
+        var myBox9 = document.getElementById('box9').value; 
+        var myBox10 = 22;
+        var result = document.getElementById('result5'); 
+        var myResult5 = myBox9 * myBox10;
+          document.getElementById('result5').value = myResult5;
+
+    }
+</script>
+
+<script>
+    function calculate6() {
+        var result6 = 0
+        var myBox11 = document.getElementById('box11').value; 
+        var myBox12 = 5;
+        var result = document.getElementById('result6'); 
+        var myResult6 = myBox11 * myBox12;
+          document.getElementById('result6').value = myResult6;
+
+    }
+</script>
+
+<script>
+    function calculate7() {
+        var result7 = 0
+        var myBox13 = document.getElementById('box13').value; 
+        var myBox14 = 78;
+        var result = document.getElementById('result7'); 
+        var myResult7 = myBox13 * myBox14;
+          document.getElementById('result7').value = myResult7;
+
+    }
+</script>
+
+<script>
+    function calculate8() {
+        var result8 = 0
+        var myBox15 = document.getElementById('box15').value; 
+        var myBox16 = 148;
+        var result = document.getElementById('result8'); 
+        var myResult8 = myBox15 * myBox16;
+          document.getElementById('result8').value = myResult8;
+
+    }
+</script>
+
+<script>
+    function calculate9() {
+        var result9 = 0
+        var myBox17 = document.getElementById('box17').value; 
+        var myBox18 = 13;
+        var result = document.getElementById('result9'); 
+        var myResult9 = myBox17 * myBox18;
+          document.getElementById('result9').value = myResult9;
+
+    }
+</script>
+
+<script>
+    function calculate10() {
+        var result10 = 0
+        var myBox19 = document.getElementById('box19').value; 
+        var myBox20 = 118;
+        var result = document.getElementById('result10'); 
+        var myResult10 = myBox19 * myBox20;
+          document.getElementById('result10').value = myResult10;
+
+    }
+</script>
+
+<script>
+    function calculate11() {
+        var result11 = 0
+        var myBox21 = document.getElementById('box21').value; 
+        var myBox22 = 111;
+        var result = document.getElementById('result11'); 
+        var myResult11 = myBox21 * myBox22;
+          document.getElementById('result11').value = myResult11;
+
+    }
+</script>
+
+<script>
+    function calculate12() {
+        var result12 = 0
+        var myBox23 = document.getElementById('box23').value; 
+        var myBox24 = 43;
+        var result = document.getElementById('result12'); 
+        var myResult12 = myBox23 * myBox24;
+          document.getElementById('result12').value = myResult12;
+
+    }
+</script>
+
+<script>
+    function calculate13() {
+        var result13 = 0
+        var myBox25 = document.getElementById('box25').value; 
+        var myBox26 = 13;
+        var result = document.getElementById('result13'); 
+        var myResult13 = myBox25 * myBox26;
+          document.getElementById('result13').value = myResult13;
+
+    }
+</script>
+
+<script>
+    function calculate14() {
+        var result14 = 0
+        var myBox27 = document.getElementById('box27').value; 
+        var myBox28 = 90;
+        var result = document.getElementById('result14'); 
+        var myResult14 = myBox27 * myBox28;
+          document.getElementById('result14').value = myResult14;
+
+    }
+</script>
+
+<script>
+    function calculate15() {
+        var result15 = 0
+        var myBox29 = document.getElementById('box29').value; 
+        var myBox30 = 630;
+        var result = document.getElementById('result15'); 
+        var myResult15 = myBox29 * myBox30;
+          document.getElementById('result15').value = myResult15;
+
+    }
+</script>
+
+<script>
+    function calculate16() {
+        var result16 = 0
+        var myBox31 = document.getElementById('box31').value; 
+        var myBox32 = 50;
+        var result = document.getElementById('result16'); 
+        var myResult16 = myBox31 * myBox32;
+          document.getElementById('result16').value = myResult16;
+
+    }
+</script>
+
+<script>
+    function calculate17() {
+        var result17 = 0
+        var myBox33 = document.getElementById('box33').value; 
+        var myBox34 = 123;
+        var result = document.getElementById('result17'); 
+        var myResult17 = myBox33 * myBox34;
+          document.getElementById('result17').value = myResult17;
+
+    }
+</script>
+
+<script>
+    function calculate18() {
+        var result18 = 0
+        var myBox35 = document.getElementById('box35').value; 
+        var myBox36 = 28;
+        var result = document.getElementById('result18'); 
+        var myResult18 = myBox35 * myBox36;
+          document.getElementById('result18').value = myResult18;
+
+    }
+</script>
+
+<script>
+    function calculate19() {
+        var result19 = 0
+        var myBox37 = document.getElementById('box37').value; 
+        var myBox38 = 196;
+        var result = document.getElementById('result19'); 
+        var myResult19 = myBox37 * myBox38;
+          document.getElementById('result19').value = myResult19;
+
+    }
+</script>
+
+<script>
+    function calculate20() {
+        var result20 = 0
+        var myBox39 = document.getElementById('box39').value; 
+        var myBox40 = 92;
+        var result = document.getElementById('result20'); 
+        var myResult20 = myBox39 * myBox40;
+          document.getElementById('result20').value = myResult20;
+
+    }
+</script>
+
+<script>
+    function calculate21() {
+        var result21 = 0
+        var myBox41 = document.getElementById('box41').value; 
+        var myBox42 = 477;
+        var result = document.getElementById('result21'); 
+        var myResult21 = myBox41 * myBox42;
+          document.getElementById('result21').value = myResult21;
+
+    }
+</script>
+
+<script>
+    function calculate22() {
+        var result22 = 0
+        var myBox43 = document.getElementById('box43').value; 
+        var myBox44 = 469;
+        var result = document.getElementById('result22'); 
+        var myResult22 = myBox43 * myBox44;
+          document.getElementById('result22').value = myResult22;
+
+    }
+</script>
+
+<script>
+    function calculate23() {
+        var result23 = 0
+        var myBox45 = document.getElementById('box45').value; 
+        var myBox46 = 1376;
+        var result = document.getElementById('result23'); 
+        var myResult23 = myBox45 * myBox46;
+          document.getElementById('result23').value = myResult23;
+
+    }
+</script>
+
+<script>
+    function calculate24() {
+        var result24 = 0
+        var myBox47 = document.getElementById('box47').value; 
+        var myBox48 = 2400;
+        var result = document.getElementById('result24'); 
+        var myResult24 = myBox47 * myBox48;
+          document.getElementById('result24').value = myResult24;
+
+    }
+</script>
+
+<script>
+    function calculate25() {
+        var result25 = 0
+        var myBox49 = document.getElementById('box49').value; 
+        var myBox50 = 500;
+        var result = document.getElementById('result25'); 
+        var myResult25 = myBox49 * myBox50;
+          document.getElementById('result25').value = myResult25;
+
+    }
+</script>
+
+<script>
+    function calculate26() {
+        var result26 = 0
+        var myBox51 = document.getElementById('box51').value; 
+        var myBox52 = 624;
+        var result = document.getElementById('result26'); 
+        var myResult26 = myBox51 * myBox52;
+          document.getElementById('result26').value = myResult26;
+
+    }
+</script>
+
+<script>
+    function calculate27() {
+        var result27 = 0
+        var myBox53 = document.getElementById('box53').value; 
+        var myBox54 = 12;
+        var result = document.getElementById('result27'); 
+        var myResult27 = myBox53 * myBox54;
+          document.getElementById('result27').value = myResult27;
+
+    }
+</script>
+
+<script>
+    function calculate28() {
+        var result28 = 0
+        var myBox55 = document.getElementById('box55').value; 
+        var myBox56 = 84;
+        var result = document.getElementById('result28'); 
+        var myResult28 = myBox55 * myBox56;
+          document.getElementById('result28').value = myResult28;
+
+    }
+</script>
+
+<script>
+    function calculate29() {
+        var result29 = 0
+        var myBox57 = document.getElementById('box57').value; 
+        var myBox58 = 57;
+        var result = document.getElementById('result29'); 
+        var myResult29 = myBox57 * myBox58;
+          document.getElementById('result29').value = myResult29;
+
+    }
+</script>
+
+<script>
+    function calculate30() {
+        var result30 = 0
+        var myBox59 = document.getElementById('box59').value; 
+        var myBox60 = 109;
+        var result = document.getElementById('result30'); 
+        var myResult30 = myBox59 * myBox60;
+          document.getElementById('result30').value = myResult30;
+
+    }
+</script>
+
+<script>
+    function calculate31() {
+        var result31 = 0
+        var myBox61 = document.getElementById('box61').value; 
+        var myBox62 = 649;
+        var result = document.getElementById('result31'); 
+        var myResult31 = myBox61 * myBox62;
+          document.getElementById('result31').value = myResult31;
+
+    }
+</script>
+
+<script>
+    function calculate32() {
+        var result32 = 0
+        var myBox63 = document.getElementById('box63').value; 
+        var myBox64 = 898;
+        var result = document.getElementById('result32'); 
+        var myResult32 = myBox63 * myBox64;
+          document.getElementById('result32').value = myResult32;
+
+    }
+</script>
+
+<script>
+    function calculate33() {
+        var result33 = 0
+        var myBox65 = document.getElementById('box65').value; 
+        var myBox66 = 2312;
+        var result = document.getElementById('result33'); 
+        var myResult33 = myBox65 * myBox66;
+          document.getElementById('result33').value = myResult33;
+
+    }
+</script>
+
+<script>
+    function calculate34() {
+        var result34 = 0
+        var myBox67 = document.getElementById('box67').value; 
+        var myBox68 = 165;
+        var result = document.getElementById('result34'); 
+        var myResult34 = myBox67 * myBox68;
+          document.getElementById('result34').value = myResult34;
+
+    }
+</script>
+
+<script>
+    function calculate35() {
+        var result35 = 0
+        var myBox69 = document.getElementById('box69').value; 
+        var myBox70 = 370;
+        var result = document.getElementById('result35'); 
+        var myResult35 = myBox69 * myBox70;
+          document.getElementById('result35').value = myResult35;
+
+    }
+</script>
+
+<script>
+    function calculate36() {
+        var result36 = 0
+        var myBox71 = document.getElementById('box71').value; 
+        var myBox72 = 392;
+        var result = document.getElementById('result36'); 
+        var myResult36 = myBox71 * myBox72;
+          document.getElementById('result36').value = myResult36;
+
+    }
+</script>
+
+<script>
+    function calculate37() {
+        var result37 = 0
+        var myBox73 = document.getElementById('box73').value; 
+        var myBox74 = 233;
+        var result = document.getElementById('result37'); 
+        var myResult37 = myBox73 * myBox74;
+          document.getElementById('result37').value = myResult37;
+
+    }
+</script>
+
+<script>
+    function calculate38() {
+        var result38 = 0
+        var myBox75 = document.getElementById('box75').value; 
+        var myBox76 = 41;
+        var result = document.getElementById('result38'); 
+        var myResult38 = myBox75 * myBox76;
+          document.getElementById('result38').value = myResult38;
+
+    }
+</script>
+
+<script>
+    function calculate39() {
+        var result39 = 0
+        var myBox77 = document.getElementById('box77').value; 
+        var myBox78 = 138;
+        var result = document.getElementById('result39'); 
+        var myResult39 = myBox77 * myBox78;
+          document.getElementById('result39').value = myResult39;
+
+    }
+</script>
+
+<script>
+    function calculate40() {
+        var result40 = 0
+        var myBox79 = document.getElementById('box79').value; 
+        var myBox80 = 39;
+        var result = document.getElementById('result40'); 
+        var myResult40 = myBox79 * myBox80;
+          document.getElementById('result40').value = myResult40;
+
+    }
+</script>
+
+<script>
+    function calculate41() {
+        var result41 = 0
+        var myBox81 = document.getElementById('box81').value; 
+        var myBox82 = 160;
+        var result = document.getElementById('result41'); 
+        var myResult41 = myBox81 * myBox82;
+          document.getElementById('result41').value = myResult41;
+
+    }
+</script>
+
+<script>
+    function calculate42() {
+        var result42 = 0
+        var myBox83 = document.getElementById('box83').value; 
+        var myBox84 = 109;
+        var result = document.getElementById('result42'); 
+        var myResult42 = myBox83 * myBox84;
+          document.getElementById('result42').value = myResult42;
+
+    }
+</script>
+
+<script>
+    function calculate43() {
+        var result43 = 0
+        var myBox85 = document.getElementById('box85').value; 
+        var myBox86 = 109;
+        var result = document.getElementById('result43'); 
+        var myResult43 = myBox85 * myBox86;
+          document.getElementById('result43').value = myResult43;
+
+    }
+</script>
+
+<script>
+    function calculate44() {
+        var result44 = 0
+        var myBox87 = document.getElementById('box87').value; 
+        var myBox88 = 53;
+        var result = document.getElementById('result44'); 
+        var myResult44 = myBox87 * myBox88;
+          document.getElementById('result44').value = myResult44;
+
+    }
+</script>
+
+<script>
+    function calculate45() {
+        var result45 = 0
+        var myBox89 = document.getElementById('box89').value; 
+        var myBox90 = 54;
+        var result = document.getElementById('result45'); 
+        var myResult45 = myBox89 * myBox90;
+          document.getElementById('result45').value = myResult45;
+
+    }
+</script>
+
+<script>
+    function calculate46() {
+        var result46 = 0
+        var myBox91 = document.getElementById('box91').value; 
+        var myBox92 = 64;
+        var result = document.getElementById('result46'); 
+        var myResult46 = myBox91 * myBox92;
+          document.getElementById('result46').value = myResult46;
+
+    }
+</script>
+
+<script>
+    function calculate47() {
+        var result47 = 0
+        var myBox93 = document.getElementById('box93').value; 
+        var myBox94 = 91;
+        var result = document.getElementById('result47'); 
+        var myResult47 = myBox93 * myBox94;
+          document.getElementById('result47').value = myResult47;
+
+    }
+</script>
+
+<script>
+    function calculate48() {
+        var result48 = 0
+        var myBox95 = document.getElementById('box95').value; 
+        var myBox96 = 15;
+        var result = document.getElementById('result48'); 
+        var myResult48 = myBox95 * myBox96;
+          document.getElementById('result48').value = myResult48;
+
+    }
+</script>
+
+<script>
+    function calculate49() {
+        var result49 = 0
+        var myBox97 = document.getElementById('box97').value; 
+        var myBox98 = 398;
+        var result = document.getElementById('result49'); 
+        var myResult49 = myBox97 * myBox98;
+          document.getElementById('result49').value = myResult49;
+
+    }
+</script>
+
+<script>
+    function calculate50() {
+        var result50 = 0
+        var myBox99 = document.getElementById('box99').value; 
+        var myBox100 = 56;
+        var result = document.getElementById('result50'); 
+        var myResult50 = myBox99 * myBox100;
+          document.getElementById('result50').value = myResult50;
+
+    }
+</script>
+
+<script>
+    function calculate51() {
+        var result51 = 0
+        var myBox101 = document.getElementById('box101').value; 
+        var myBox102 = 398;
+        var result = document.getElementById('result51'); 
+        var myResult51 = myBox101 * myBox102;
+          document.getElementById('result51').value = myResult51;
+
+    }
+</script>
+
+<script>
+    function calculate52() {
+        var result52 = 0
+        var myBox103 = document.getElementById('box103').value; 
+        var myBox104 = 240;
+        var result = document.getElementById('result52'); 
+        var myResult52 = myBox103 * myBox104;
+          document.getElementById('result52').value = myResult52;
+
+    }
+</script>
+
+<script>
+    function calculate53() {
+        var result53 = 0
+        var myBox105 = document.getElementById('box105').value; 
+        var myBox106 = 98;
+        var result = document.getElementById('result53'); 
+        var myResult53 = myBox105 * myBox106;
+          document.getElementById('result53').value = myResult53;
+
+    }
+</script>
+
+<script>
+    function calculate54() {
+        var result54 = 0
+        var myBox107 = document.getElementById('box107').value; 
+        var myBox108 = 1;
+        var result = document.getElementById('result54'); 
+        var myResult54 = myBox107 * myBox108;
+          document.getElementById('result54').value = myResult54;
+
+    }
+</script>
+
+<script>
+    function calculate55() {
+        var result55 = 0
+        var myBox109 = document.getElementById('box109').value; 
+        var myBox110 = 4;
+        var result = document.getElementById('result55'); 
+        var myResult55 = myBox109 * myBox110;
+          document.getElementById('result55').value = myResult55;
+
+    }
+</script>
+
+<script>
+    function calculate56() {
+        var result56 = 0
+        var myBox111 = document.getElementById('box111').value; 
+        var myBox112 = 396;
+        var result = document.getElementById('result56'); 
+        var myResult56 = myBox111 * myBox112;
+          document.getElementById('result56').value = myResult56;
+
+    }
+</script>
+
+<script>
+    function calculate57() {
+        var result57 = 0
+        var myBox113 = document.getElementById('box113').value; 
+        var myBox114 = 57;
+        var result = document.getElementById('result57'); 
+        var myResult57 = myBox113 * myBox114;
+          document.getElementById('result57').value = myResult57;
+
+    }
+</script>
+
+<script>
+    function calculate58() {
+        var result58 = 0
+        var myBox115 = document.getElementById('box115').value; 
+        var myBox116 = 82;
+        var result = document.getElementById('result58'); 
+        var myResult58 = myBox115 * myBox116;
+          document.getElementById('result58').value = myResult58;
+
+    }
+</script>
+
+<script>
+    function calculate59() {
+        var result59 = 0
+        var myBox117 = document.getElementById('box117').value; 
+        var myBox118 = 44;
+        var result = document.getElementById('result59'); 
+        var myResult59 = myBox117 * myBox118;
+          document.getElementById('result59').value = myResult59;
+
+    }
+</script>
+
+<script>
+    function calculate60() {
+        var result60 = 0
+        var myBox119 = document.getElementById('box119').value; 
+        var myBox120 = 52;
+        var result = document.getElementById('result60'); 
+        var myResult60 = myBox119 * myBox120;
+          document.getElementById('result60').value = myResult60;
+
+    }
+</script>
+
+<script>
+    function calculate61() {
+        var result61 = 0
+        var myBox121 = document.getElementById('box121').value; 
+        var myBox122 = 190;
+        var result = document.getElementById('result61'); 
+        var myResult61 = myBox121 * myBox122;
+          document.getElementById('result61').value = myResult61;
+
+    }
+</script>
+
+<script>
+    function calculate62() {
+        var result62 = 0
+        var myBox123 = document.getElementById('box123').value; 
+        var myBox124 = 57;
+        var result = document.getElementById('result62'); 
+        var myResult62 = myBox123 * myBox124;
+          document.getElementById('result62').value = myResult62;
+
+    }
+</script>
+
+<script>
+    function calculate63() {
+        var result63 = 0
+        var myBox125 = document.getElementById('box125').value; 
+        var myBox126 = 0.1;
+        var result = document.getElementById('result63'); 
+        var myResult63 = myBox125 * myBox126;
+          document.getElementById('result63').value = myResult63;
+
+    }
+</script>
+
+<script>
+    function calculate64() {
+        var result64 = 0
+        var myBox127 = document.getElementById('box127').value; 
+        var myBox128 = 50;
+        var result = document.getElementById('result64'); 
+        var myResult64 = myBox127 * myBox128;
+          document.getElementById('result64').value = myResult64;
+
+    }
+</script>
+
+<!--*********SEZIONE JAVASCRIPT SOMMA FINALE*********-->
+
+<script>
+function somma()
+{
+
+var a, b, c, d, e, f, g, h, i, l, j, k, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1, e1, f1, g1, h1, i1, j1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1, u1, v1, w1, x1, y1, z1, a2, b2, c2, d2, e2, f2, g2, h2, i2, j2, k2, l2, xxx;
+
+a = Number(document.getElementById('result1').value);
+b = Number(document.getElementById('result2').value);
+c = Number(document.getElementById('result3').value);
+d = Number(document.getElementById('result4').value);
+e = Number(document.getElementById('result5').value);
+f = Number(document.getElementById('result6').value);
+g = Number(document.getElementById('result7').value);
+h = Number(document.getElementById('result8').value);
+i = Number(document.getElementById('result9').value);
+l = Number(document.getElementById('result10').value);
+j = Number(document.getElementById('result11').value);
+k = Number(document.getElementById('result12').value);
+m = Number(document.getElementById('result13').value);
+n = Number(document.getElementById('result14').value);
+o = Number(document.getElementById('result15').value);
+p = Number(document.getElementById('result16').value);
+q = Number(document.getElementById('result17').value);
+r = Number(document.getElementById('result18').value);
+s = Number(document.getElementById('result19').value);
+t = Number(document.getElementById('result20').value);
+u = Number(document.getElementById('result21').value);
+v = Number(document.getElementById('result22').value);
+w = Number(document.getElementById('result23').value);
+x = Number(document.getElementById('result24').value);
+y = Number(document.getElementById('result25').value);
+z = Number(document.getElementById('result26').value);
+a1 = Number(document.getElementById('result27').value);
+b1 = Number(document.getElementById('result28').value);
+c1 = Number(document.getElementById('result29').value);
+d1 = Number(document.getElementById('result30').value);
+e1 = Number(document.getElementById('result31').value);
+f1 = Number(document.getElementById('result32').value);
+g1 = Number(document.getElementById('result33').value);
+h1 = Number(document.getElementById('result34').value);
+i1 = Number(document.getElementById('result35').value);
+j1 = Number(document.getElementById('result36').value);
+k1 = Number(document.getElementById('result37').value);
+l1 = Number(document.getElementById('result38').value);
+m1 = Number(document.getElementById('result39').value);
+n1 = Number(document.getElementById('result40').value);
+o1 = Number(document.getElementById('result41').value);
+p1 = Number(document.getElementById('result42').value);
+q1 = Number(document.getElementById('result43').value);
+r1 = Number(document.getElementById('result44').value);
+s1 = Number(document.getElementById('result45').value);
+t1 = Number(document.getElementById('result46').value);
+u1 = Number(document.getElementById('result47').value);
+v1 = Number(document.getElementById('result48').value);
+w1 = Number(document.getElementById('result49').value);
+x1 = Number(document.getElementById('result50').value);
+y1 = Number(document.getElementById('result51').value);
+z1 = Number(document.getElementById('result52').value);
+a2 = Number(document.getElementById('result53').value);
+b2 = Number(document.getElementById('result54').value);
+c2 = Number(document.getElementById('result55').value);
+d2 = Number(document.getElementById('result56').value);
+e2 = Number(document.getElementById('result57').value);
+f2 = Number(document.getElementById('result58').value);
+g2 = Number(document.getElementById('result59').value);
+h2 = Number(document.getElementById('result60').value);
+i2 = Number(document.getElementById('result61').value);
+j2 = Number(document.getElementById('result62').value);
+k2 = Number(document.getElementById('result63').value);
+l2 = Number(document.getElementById('result64').value);
+
+xxx = a + b + c + d + e + f + g + h + i + l + j + k + m + n + o + p + q + r + s + t + u + v + w + x + y + z + a1 + b1 + c1 + d1 + e1 + f1 + g1 + h1 +i1 + j1 + k1 + l1 + m1 + n1 + o1 + p1 + q1 + r1 + s1 + t1 + u1 + v1 + w1 + x1 + y1 + z1 + a2 + b2 + c2 + d2 + e2 + f2 + g2 + h2 + i2 + j2 + k2 + l2;
+
+document.getElementById('ris').value= xxx;
+
+}
+</script>
+
+</html>
